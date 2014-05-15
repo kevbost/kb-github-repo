@@ -1,31 +1,160 @@
 // bower:scss
 // endbower
 
-body {
-    background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
-}
-
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
-    h1 {
-        font-size: 60px;
-        line-height: 1;
-        letter-spacing: -1px;
-    }
-}
-
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
+}
+
+body {
+    margin:0;
+    padding:0;
+    border:0;
+    // background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    font: 13px Helvetica, arial, freesans, clean, sans-serif;
+}
+
+.wrapper {
+
+}
+
+// ===============================
+
+.head  {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    // background-color: transparent;
+    background-image: url(/images/navBG.png);
+    background-repeat: repeat-x;
+    margin-bottom: 20px;
+    .headContainer {
+        position: relative;
+        margin: 0 auto;
+        width: 980px;
+        height: 41px;
+        top:0;
+        left:0;
+        right:0;
+        .logoIcon {
+            display: inline;
+            float:left;
+            width:  40px;
+            height: 40px;
+            border-right: 1px solid rgb(229, 229, 229);
+            background-color: transparent;
+        }
+        .notifications {
+            display: inline;
+            float: left;
+            width:  40px;
+            height: 40px;
+            border-right: 1px solid rgb(229, 229, 229);
+            background-color: transparent;            
+        }
+        .nav {
+            display: inline;
+            float: left;
+            height: 40px;
+            width: 898px;
+            background-color: transparent;
+            .searchBar {
+                float:left;
+                width: 218px;
+                height: 26px;
+                border: 1px solid rgb(229, 229, 229);
+                margin: 7px 15px 0px 15px;
+                border-radius: 5px;
+                background-color: white;
+            }         
+            ul.navLeft li {
+                float: left;
+                padding-right: 10px;
+                margin: -4px 0 0px 0;
+                list-style-type: none;
+            }
+            ul.navRight li {
+                float: right;
+                margin: -10px 0 0px 0;
+                list-style-type: none;
+            }
+        }
+    }
+}
+
+.container  {
+    clear: both;
+    position: relative;
+    margin: 0 auto;
+    width: 980px;
+    height:1040px;
+    background-color: transparent;
+    .sideBar {
+        float:left;
+        margin: 0;
+        background-color: blue;
+        width: 230px;
+        height: 507px;
+        .profileImage {
+            position: absolute;
+            top: 0;
+            width: 230px;
+            height: 230px;
+            border-radius: 10px;
+            background-color: orange;
+        }
+        .userName {
+
+        }
+    }
+    .main {
+        float: right;
+        background-color: green;
+        width: 730px;
+        height: 1040px;
+        .tabs {
+            height: 95px;
+            background-color: grey;
+        }
+        .repos {
+            clear: both;
+            position: relative;
+            margin-top: 10px;
+            .reposLeft {
+                // position: absolute;
+                float:left;
+                width: 100px;
+                height: 200px;
+                background-color: pink;
+            }
+            .reposTitle {
+                float:left;
+                width: 100px;
+                height: 200px;
+                background-color: red;
+            }
+            .reposRight{
+                float:right;
+                width: 100px;
+                height: 200px;
+                background-color: blue;
+            }
+        }
+    }
+}
+
+.foot {
+    position: relative;
+    margin: 60px auto 0 auto;
+    width: 980px;
+    height: 100px;
+    background-color: white;
+    border-top: 1px solid rgb(229, 229, 229);
 }

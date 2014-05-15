@@ -705,7 +705,7 @@ var userApi = [{
     "received_events_url": "https://api.github.com/users/kevbost/received_events",
     "type": "User",
     "site_admin": false,
-    "name": "Kevin Bost",
+    "namex": "Kevin Bost",
     "company": "",
     "blog": "www.kevinbost.com",
     "location": "United States",
@@ -720,17 +720,42 @@ var userApi = [{
     "updated_at": "2014-05-14T06:56:54Z"
 }];
 
-// ====
-// Dill
-// ====
+var logoIcon = '<div class="logoIcon"></div><div class="notifications"></div><div class="nav"></div>';
+$('.headContainer').append(logoIcon);
 
-var numStarred = 0;
+var navLeft = '<div class="searchBar"></div><ul class="navLeft"><h4><li>Explore</li><li>Gist</li><li>Blog</li><li>Help</li></h4></ul>';
+$('.nav').append(navLeft);
 
-repoApi.forEach(function(repo) {
-    numStarred = numStarred + repo.stargazers_count;
-});
+var navRight = '<ul class="navRight"><h1><li>✣</li><li>⬅</li><li>↳</li></h1></ul>';
+$('.nav').append(navRight);
 
-userApi[0].starred = numStarred;
+var main = '<div class="main"></div>';
+$('.container').append(main);
+
+var sideBar = '<div class="sideBar"></div>';
+$('.container').prepend(sideBar);
+
+var profileImage = '<div class="profileImage"></div>';
+$('.sideBar').append(profileImage);
+
+var tabs = '<div class="tabs"><div class="tabs"></div><div class="reposTitle"></div><div class="reposRight"></div></div>';
+$('.main').append(tabs);
+
+var repos = '<div class="repos"><div class="reposLeft"></div><div class="reposTitle"></div><div class="reposRight"></div></div>';
+$('.main').append(repos);
+
+
+// // ====
+// // Dill
+// // ====
+
+// var numStarred = 0;
+
+// repoApi.forEach(function(repo) {
+//     numStarred = numStarred + repo.stargazers_count;
+// });
+
+// userApi[0].starred = numStarred;
 
 
 
@@ -751,23 +776,23 @@ userApi[0].starred = numStarred;
 // // Mason's Gist
 // // ============
 
-var people = [{
-    person: 'Mason',
-    feeling: 'great'
-}, {
-    person: 'Bob',
-    feeling: 'terrible'
-}];
+// var people = [{
+//     person: 'Mason',
+//     feeling: 'great'
+// }, {
+//     person: 'Bob',
+//     feeling: 'terrible'
+// }];
 
-//  function              function       string  
-var goodMorningTemplate = _.template($('.goodmorning-template').text());
-people.forEach(function(person) {
+// //  function              function       string  
+// var goodMorningTemplate = _.template($('.goodmorning-template').text());
+// people.forEach(function(person) {
 
-    //    string       function             object
-    var rendered = goodMorningTemplate(person);
+//     //    string       function             object
+//     var rendered = goodMorningTemplate(person);
 
-    $('body').prepend(rendered);
-});
+//     $('body').prepend(rendered);
+// });
 
 
 // ========
