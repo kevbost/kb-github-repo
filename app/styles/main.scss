@@ -18,6 +18,10 @@ body {
     font: 13px Helvetica, arial, freesans, clean, sans-serif;
 }
 
+a {
+    color: #4183c4;
+}
+
 .wrapper {
 
 }
@@ -96,27 +100,111 @@ body {
     width: 980px;
     height:1040px;
     background-color: transparent;
-    .sideBar {
+    .sidebar {
         float:left;
         margin: 0;
-        background-color: blue;
+        background-color: transparent;
         width: 230px;
         height: 507px;
-        .profileImage {
-            position: absolute;
+        border-bottom: 1px solid rgb(229, 229, 229);        
+        .profileImage img{
+            position: relative;
+            display: block;
             top: 0;
             width: 230px;
             height: 230px;
             border-radius: 10px;
-            background-color: orange;
-        }
-        .userName {
+            background-color: transparent;
+            background-size: contain;
+            }
+        .belowImage {
+            position: absolute;
+            height: 80px;
+            width: 230px;
+            background-color: transparent;
+            top: 230px;
+            .identity {
+                top: 0px;
+                // margin-bottom: 20px;
+                height: 70px;
+                .fullName {
+                    position: relative;
+                    margin-top: 10px;
+                    // display: block;
+                    // top: 60px;
+                }
+                .userName {
+                    position: absolute;
+                    font-size: 20px;
+                    top: 20px;
+                }
+            }
+            .details {
+                top: 0px;
+                padding-bottom: 4px;
+                border-top: 1px solid rgb(229, 229, 229);
+                border-bottom: 1px solid rgb(229, 229, 229);
+                .detailsList { 
+                    // color:white;
+                    font-size: 14px;
+                    list-style-type: none;
+                    margin-left: -40px;
 
+                .li1 {
+
+    
+                    background: url(/images/li1.png) no-repeat transparent;
+                    margin-bottom: 7px;
+                    padding: 0px 0px 1px 24px;
+                    vertical-align: middle;
+                }
+                .li2 {
+
+    
+                    background: url(/images/li2.png) no-repeat transparent;
+                    margin-bottom: 7px;
+                    padding: 0px 0px 1px 24px;
+                    vertical-align: middle;
+                }
+                .li3 {
+
+    
+                    background: url(/images/li3.png) no-repeat transparent;
+                    margin-bottom: 7px;
+                    padding: 0px 0px 1px 24px;
+                    vertical-align: middle;
+                }
+                .li4 {
+
+    
+                    background: url(/images/li4.png) no-repeat transparent;
+                    margin-bottom: 7px;
+                    padding: 0px 0px 1px 24px;
+                    vertical-align: middle;
+                }
+
+                }
+            }
+            .users {
+                text-align: center;
+                padding-top: 13px;
+                .stat {
+                    float: left;
+                    width: 33.333%;
+                    font-size: 11px;
+                    .stat-count {
+                        font-size: 28px;
+                    }
+                }
+            }
         }
     }
+    
+
+
     .main {
         float: right;
-        background-color: green;
+        background-color: transparent;
         width: 730px;
         height: 1040px;
         .tabs {
@@ -128,7 +216,6 @@ body {
             position: relative;
             margin-top: 10px;
             .reposLeft {
-                // position: absolute;
                 float:left;
                 width: 100px;
                 height: 200px;

@@ -21,20 +21,112 @@
         <![endif]-->
 
 
+
+
+
+
 		<div class="wrapper">
 			<div class="head">
 				<div class="headContainer"></div>
 			</div>
-			<div class="container"></div>
+			<div class="container">
+			</div>
 			<div class="foot"></div>
 		</div>
 
-		<script type="text/template" class="goodmorning-template">
-  			<div class="whatever">
-   			<h1>Goodmorning, <%= person %>.</h1>
-    		<h2>You are looking <%= feeling %> today.</h2>
-  			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+		<script type="text/template" class="logoIconTemplate">
+  			<div class="logoIcon"></div>
+  			<div class="notifications"></div>
+  			<div class="nav">
+  				<div class="searchBar"></div>
+  				<ul class="navLeft">
+					<h4>
+						<li>Explore</li>
+						<li>Gist</li>
+						<li>Blog</li>
+						<li>Help</li>
+					</h4>
+				</ul>
+  				<ul class="navRight">
+  					<h1>
+  						<li>✣</li>
+  						<li>⬅</li>
+  						<li>↳</li>
+  					</h1>
+  				</ul>
+			</div>
 		</script>
+		
+		<script type="text/template" class="containerTemplate">
+			
+			<div class="sidebar">
+				<div class="profileImage">
+					<img src= "<%=avatar_url %>" ></img>
+					<div class="belowImage">
+						<div class="identity">
+							<h1 class="fullName"> <%=name %> </h1>
+							<p class="userName"> <%=login %> </p>
+						</div>
+						<div class="details">
+							<ul class="detailsList">
+						    <li class="li1"><%=location %></li>
+						    <li class="li2"><a href="mailto:someone@example.com" target="_top"><%=email%></a></li>
+						    <li class="li3"><a href="<%=blog %>"target="_blank"><%=blog %></a></li>
+						    <li class="li4"><%=created_at%></li>
+							</ul>
+						</div>
+						<div class="users">
+							<a class="stat"><strong class="stat-count"><%=followers %></strong><br>Followers</a>
+							<a class="stat"><strong class="stat-count">X</strong><br>Starred</a>
+							<a class="stat"><strong class="stat-count"><%=following %></strong><br>Following</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="main">
+				<div class="tabs"></div>
+				<div class="repos">
+					<div class="reposLeft"></div>
+					<div class="reposTitle"></div>
+					<div class="reposRight"></div>
+				</div>	
+			</div>
+			
+		</script>
+
+
+		<!--<script type="text/template" class="mainTemplate">
+			<div class="tabs"></div>
+			<div class="reposTitle"></div>
+			<div class="reposRight"></div>
+			</div>
+		</script>-->
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
