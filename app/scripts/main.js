@@ -20,7 +20,13 @@ $.getJSON('https://api.github.com/users/kevbost/repos').done(function(reposApi){
 $.getJSON('https://api.github.com/users/kevbost').done(function(userApi){
 	renderUser(userApi);
 });
+$.getJSON('https://api.github.com/users/kevbost').done(function(userNav){
+	renderNav(userNav);
+});
 
+// $.getJSON('https://api.github.com/users/kevbost/starred').done(function(starApi){
+// 	renderStar(starApi);
+// });
 
 // ///////////////////////////////////////////////
 // ///////////////////////////////Render functions
@@ -30,11 +36,18 @@ $.getJSON('https://api.github.com/users/kevbost').done(function(userApi){
 function renderRepos (rendering) {
     rendering.forEach(function(module){
         var rendered = repos( module );
-        $('.main').append(rendered);
+        $('.reposContainer').append(rendered);
+        // $('.participationGraph').css({'width':'100px','background-color':'orange'});
     });
 }
 
 // User
+function renderNav (rendering){
+		// string        function     object
+		var rendered = logoIcon( rendering );
+		$('.headContainer').html(rendered);
+	}
+
 function renderUser (rendering){
 		// string        function     object
 		var rendered = containerVar( rendering );
@@ -42,38 +55,21 @@ function renderUser (rendering){
 	}
 
 
-
-
 $('.headContainer').append(logoIcon);
 $('.sidebar').append(containerVar);
-$('.main').append(repos);
-// $('.main').append(main);
 
 
 
-// ========
-// My Notes
-// ========
-
-// //function                 function         string
-// var goodMorningTemplate = _.template($('Goodmorning, <%= person %>.').text());
-
-// // string                     function        object (literal)
-// var morningJuniper = goodMorningTemplate({person: 'Juniper'});
-// var morningKevin = goodMorningTemplate({  person: 'Kevin',
-// 										  feeling: 'great'
-// });
-
-// // function     string
-// console.log(morningKevin);
-
-// // push it to the browser
-// $('body').prepend(morningKevin);
 
 
-// var people = [
-// 	{
-// 		person: 'Kevin',
-// 		feeling: 'Awesome'
-// 	}
-// ];
+
+
+
+
+
+
+
+
+
+
+// 
