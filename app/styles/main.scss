@@ -113,7 +113,7 @@ a {
             top: 0;
             width: 230px;
             height: 230px;
-            border-radius: 10px;
+            border-radius: 6px;
             background-color: transparent;
             background-size: contain;
             }
@@ -247,6 +247,7 @@ a {
         }
         .filter {
             // height:40px;
+            display: inline;
             position: relative;
             .filterBox {
                 box-sizing: border-box;
@@ -255,41 +256,91 @@ a {
                 height: 32px;
                 border: 1px solid #ddd;
                 padding: 7px 8px;
-                margin: 0px 0px 10px 0px;
+                margin: 0px 4px 10px 0px;
                 border-radius: 3px;
                 background-color: white;
-            }         
-            .button {
-                width: 69px;
-                height: 40px;
-                margin-left: 4px;
+                .button {
+                    width: 70px;
+                    height: 40px;
+                    margin-left: 4px;
+                }
+            }
+            .tabulRight {
+                position: relative;
+                margin-top: 10px;
+                margin-right: 85px;
+                top: -19px;
+                & li {
+                    display: inline;
+                    float: right;
+                    margin-left: 10px;
+                    font-size: 14px;
+                    color: #4183c4;
+                    // font-weight: bold;
+                }
+                .all {
+                    font-weight: bold;
+                    color: #333;
+                }
+                .buttonRepos {
+                    width: 70px;
+                    height: 34px;
+                    // background-color: green;
+                    background-image: url(/images/buttonRepos.jpg);
+                    display: inline;
+                    position: absolute;
+                    float: right;
+                    right: -85px;
+                    top: -9px;
+                }
+                    .buttonRepos:hover {
+                        background-image: url(/images/buttonRepos-hover.jpg);
+                    }
+                    .buttonRepos:active {
+                        background-image: url(/images/buttonRepos-active.jpg);
+                    }
             }
         }
         .reposContainer {
-            padding-top: 10px;
+            // padding-top: 10px;
+            border-bottom: 1px solid #ddd;
+
             .repos {
                 clear: both;
                 position: relative;
-
                 .reposLeft {
                     float:left;
                     top: 0px;
                     background-image: url(/images/reposIcon1.png);
                     background-repeat: no-repeat;
-                    background-position: 0px 0px;
+                    background-position: 0px 2px;
                     width: 46px;
                     height: 33px;
-                    background-color: pink;
+                    margin-top: 20px;
+                    // background-color: pink;
                 }
                 .reposTitle {
                     float:left;
-
-                    background-color: red;
+                    // background-color: red;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
                     .reposName {
                         font-size: 20px;
                         line-height: 32px;
                         margin-top: 0px;
-                        margin-bottom: 0px;
+                        margin-bottom: 4px;
+                        color: #4183c4;
+                    }
+                    .reposDescription {
+                        margin: 0px;
+                        // margin-bottom: 7px;
+                    }
+                    .reposUpdated {
+                        margin: 0px;
+                        padding-bottom: 10px;
+                        font-size: 11px;
+                        color: #999999;
+                        margin-top: 10px;
                     }
                 }
                 .reposRight{

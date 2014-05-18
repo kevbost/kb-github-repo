@@ -33,19 +33,22 @@
 				<div class="main">
 					<div class="tabs">
 						<ul class="tabul">
-							<li class="tabli1">
-								<a href="https://github.com/kevbost">Contributions</a>
-							</li>
-							<li class="tabli2">
-									<a href="https://github.com/kevbost?tab=repositories">Repositories</a>
-							</li>
-							<li class="tabli3">
-									<a href="https://github.com/kevbost?tab=activity">Public activity</a>
-							</li>
+							<li class="tabli1"><a href="https://github.com/kevbost">Contributions</a></li>
+							<li class="tabli2"><a href="https://github.com/kevbost?tab=repositories">Repositories</a></li>
+							<li class="tabli3"><a href="https://github.com/kevbost?tab=activity">Public activity</a></li>
 						</ul>
 					</div>
 					<div class="filter">
-						<form class=".search"><input type="text" class="filterBox" placeholder="Find a repository…"><input type="submit" value="Search" class="button"></form>
+						<form class=".search"><input type="text" class="filterBox" placeholder="Find a repository…"><input type="submit" value="Search" class="button" style="width: 70px; height: 34px;"></form>
+						<ul class="tabulRight">
+							<li class="buttonRepos"></li>
+							<li>Mirrors</li>
+							<li>Forks</li>
+							<li>Sources</li>
+							<li>Private</li>
+							<li>Public</li>
+							<li class="all">All</li>
+						</ul>
 					</div>
 				</div>
 				<div class="sidebar"></div>
@@ -155,6 +158,7 @@
 					</div>
 					<div class="reposTitle">
 						<h3 class="reposName"> <%=name %> </h3>
+						<p class="reposDescription"><%=description %></p>
 						<p class="reposUpdated"><%=updated_at %></p>
 					</div>
 					<div class="reposRight"></div>
