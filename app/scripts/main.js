@@ -6,7 +6,8 @@
 // function              function         string
 var logoIcon = _.template($('.logoIconTemplate').text());
 var containerVar = _.template($('.containerTemplate').text());
-// var repos = _.template($('.mainTemplate').text());
+var repos = _.template($('.mainTemplate').text());
+// var secret = _.template()
 
 
 // ///////////////////////////////////////////////
@@ -28,9 +29,8 @@ $.getJSON('https://api.github.com/users/kevbost').done(function(userApi){
 // Repos
 function renderRepos (rendering) {
     rendering.forEach(function(module){
-        // string        function     object
-        var rendered = containerVar( module );
-        $('.container').prepend(rendered);
+        var rendered = repos( module );
+        $('.main').append(rendered);
     });
 }
 
@@ -38,14 +38,15 @@ function renderRepos (rendering) {
 function renderUser (rendering){
 		// string        function     object
 		var rendered = containerVar( rendering );
-		$('.container').prepend(rendered);
+		$('.sidebar').prepend(rendered);
 	}
 
 
 
 
 $('.headContainer').append(logoIcon);
-$('.container').append(containerVar);
+$('.sidebar').append(containerVar);
+$('.main').append(repos);
 // $('.main').append(main);
 
 
