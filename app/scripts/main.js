@@ -14,13 +14,13 @@ var repos = _.template($('.mainTemplate').text());
 // ////////////////////////////////// Fetch Repo's
 // ///////////////////////////////////////////////
 
-$.getJSON('https://api.github.com/users/kevbost/repos').done(function(reposApi){
+$.getJSON('https://api.github.com/users/kevbost/repos?client_id=beadb55394dbd2d3da3c&client_secret=2bdf53bdfababf328a91930f15d2698a3b1a3a25').done(function(reposApi){
     renderRepos(reposApi);
 });
-$.getJSON('https://api.github.com/users/kevbost').done(function(userApi){
+$.getJSON('https://api.github.com/users/kevbost?client_id=beadb55394dbd2d3da3c&client_secret=2bdf53bdfababf328a91930f15d2698a3b1a3a25').done(function(userApi){
 	renderUser(userApi);
 });
-$.getJSON('https://api.github.com/users/kevbost').done(function(userNav){
+$.getJSON('https://api.github.com/users/kevbost?client_id=beadb55394dbd2d3da3c&client_secret=2bdf53bdfababf328a91930f15d2698a3b1a3a25').done(function(userNav){
 	renderNav(userNav);
 });
 
