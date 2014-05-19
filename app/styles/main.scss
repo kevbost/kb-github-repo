@@ -214,7 +214,7 @@ a {
     position: relative;
     margin: 0 auto;
     width: 980px;
-    height:1040px;
+    // height:1040px;
     background-color: transparent;
     .sidebar {
         float:left;
@@ -322,7 +322,7 @@ a {
         float: right;
         background-color: transparent;
         width: 730px;
-        height: 1040px;
+        // height: 1040px;
         border-bottom: 1px solid #ddd;
         .tabs {
             height: 26px;
@@ -479,6 +479,7 @@ a {
                     // background-color: red;
                     margin-top: 20px;
                     margin-bottom: 10px;
+                    max-width: 680px;
                     .reposName {
                         font-size: 20px;
                         line-height: 32px;
