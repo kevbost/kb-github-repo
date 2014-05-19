@@ -596,7 +596,18 @@ a {
             left: 46%;
             top: 10px;
             clear:both;
-            background-image: url(/images/strongbadtocat-90px.png);
+            // display: hidden;
+            // background-color: red;
+            background-image: url();
+            transition: all .5s ease;
+            background-image: url(/images/octocat.png);
+            // opacity: 1;
+            &:hover {
+                background-image: url(/images/octocat-hover.png);
+            }
+            &:active {
+                background-image: url(/images/strongbadtocat-90px.png);
+            }
         }
         .footRight{
             margin-right: -10px;
