@@ -58,18 +58,4 @@ function renderUser (rendering){
 $('.headContainer').append(logoIcon);
 $('.sidebar').append(containerVar);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 
