@@ -243,7 +243,10 @@ module.exports = function (grunt) {
                     cwd: '<%= config.app %>/images',
                     src: '{,*/}*.{gif,jpeg,jpg,png}',
                     dest: '<%= config.dist %>/images'
-                }]
+                }],
+                options: {
+                    cache: false
+                }
             }
         },
 

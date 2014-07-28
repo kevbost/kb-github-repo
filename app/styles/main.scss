@@ -39,7 +39,7 @@ a {
     height: 40px;
     border-bottom: 1px solid rgb(229, 229, 229);
     // background-color: transparent;
-    background-image: url(/images/navBG.png);
+    background-image: url(../images/navBG.png);
     background-repeat: repeat-x;
     margin-bottom: 20px;
     .headContainer {
@@ -57,12 +57,12 @@ a {
             height: 40px;
             border-right: 1px solid rgb(229, 229, 229);
             background-color: transparent;
-            background: url(/images/logoIcon-static.png) no-repeat;
+            background: url(../images/logoIcon-static.png) no-repeat;
             background-size: 25px 25px;
             background-position: 0px 50%;
             transition: .3s ease;
             &:hover {
-                background: url(/images/logoIcon-hover.png) no-repeat;
+                background: url(../images/logoIcon-hover.png) no-repeat;
                 background-size: 25px 25px;
                 background-position: 0px 50%;
             }
@@ -154,33 +154,33 @@ a {
                     }
                     .navRightli1 {
                         // display: inline;
-                        background: url(/images/navRightli1.png);
+                        background: url(../images/navRightli1.png);
                         // padding: 0px 0px 1px 24px;
                         // margin: 0px 0px 0px 5px;
                         width:16px;
                         height:16px;
                         &:hover {
-                            background: url(/images/navRightli1-hover.png);
+                            background: url(../images/navRightli1-hover.png);
                         }
                     }
                     .navRightli2 {
                         // display: inline;
-                        background: url(/images/navRightli2.png);
+                        background: url(../images/navRightli2.png);
                         // margin: 0px 0px 0px 5px;
                         width:16px;
                         height:16px;
                         &:hover {
-                            background: url(/images/navRightli2-hover.png);
+                            background: url(../images/navRightli2-hover.png);
                         }
                     }
                     .navRightli3 {
-                        background: url(/images/navRightli3.png);
+                        background: url(../images/navRightli3.png);
                         // margin: 0px 0px 0px 5px;
                         // right: 40px;
                         width:20px;
                         height:16px;
                         &:hover {
-                            background: url(/images/navRightli3-hover.png);
+                            background: url(../images/navRightli3-hover.png);
                         }
                     }
                     .navRightli4 {
@@ -266,25 +266,25 @@ a {
                     list-style-type: none;
                     margin-left: -40px;
                     .li1 {
-                        background: url(/images/li1.png) no-repeat transparent;
+                        background: url(../images/li1.png) no-repeat transparent;
                         margin-bottom: 7px;
                         padding: 0px 0px 1px 24px;
                         vertical-align: middle;
                     }
                     .li2 {
-                        background: url(/images/li2.png) no-repeat transparent;
+                        background: url(../images/li2.png) no-repeat transparent;
                         margin-bottom: 7px;
                         padding: 0px 0px 1px 24px;
                         vertical-align: middle;
                     }
                     .li3 {
-                        background: url(/images/li3.png) no-repeat transparent;
+                        background: url(../images/li3.png) no-repeat transparent;
                         margin-bottom: 7px;
                         padding: 0px 0px 1px 24px;
                         vertical-align: middle;
                     }
                     .li4 {
-                        background: url(/images/li4.png) no-repeat transparent;
+                        background: url(../images/li4.png) no-repeat transparent;
                         margin-bottom: 7px;
                         padding: 0px 0px 1px 24px;
                         vertical-align: middle;
@@ -349,7 +349,7 @@ a {
                     color: #666;
                 }
                 .tabli1 {
-                    background: url(/images/contributionsTab.png) no-repeat transparent;
+                    background: url(../images/contributionsTab.png) no-repeat transparent;
                     background-position: 13px 60%;
                     // border-bottom: 1px solid rgb(229, 229, 229);
                     // border-radius: 0px 0px 3px 0px;
@@ -357,7 +357,7 @@ a {
                     // border-radius: 3px;
                 }
                 .tabli2 {
-                    background: url(/images/repositoriesTab.png) no-repeat transparent;         
+                    background: url(../images/repositoriesTab.png) no-repeat transparent;         
                     background-position: 12px 58%;
                     border-left: 1px solid rgb(229, 229, 229);
                     border-top: 1px solid rgb(229, 229, 229);
@@ -370,7 +370,7 @@ a {
                     }
                 }
                 .tabli3 {
-                    background: url(/images/activityTab.png) no-repeat transparent;
+                    background: url(../images/activityTab.png) no-repeat transparent;
                     background-position: 13px 58%;
                     // border-bottom: 1px solid rgb(229, 229, 229);
                     // border-radius: 0px 0px 0px 3px;
@@ -380,7 +380,7 @@ a {
             width: 111px;
             height: 26px;
             // background-color: green;
-            background: url(/images/editProfile.jpg);
+            background: url(../images/editProfile.jpg);
             display: inline;
             position: absolute;
             // float: right;
@@ -388,10 +388,10 @@ a {
             top: 0px;
         }
             .editProfile:hover {
-                background-image: url(/images/editProfile-hover.jpg);
+                background-image: url(../images/editProfile-hover.jpg);
             }
             .editProfile:active {
-                background-image: url(/images/editProfile-active.jpg);
+                background-image: url(../images/editProfile-active.jpg);
             }
             }
         }
@@ -443,7 +443,7 @@ a {
                     width: 70px;
                     height: 34px;
                     // background-color: green;
-                    background-image: url(/images/buttonRepos.jpg);
+                    background-image: url(../images/buttonRepos.jpg);
                     display: inline;
                     position: absolute;
                     float: right;
@@ -451,10 +451,10 @@ a {
                     top: -9px;
                 }
                     .buttonRepos:hover {
-                        background-image: url(/images/buttonRepos-hover.jpg);
+                        background-image: url(../images/buttonRepos-hover.jpg);
                     }
                     .buttonRepos:active {
-                        background-image: url(/images/buttonRepos-active.jpg);
+                        background-image: url(../images/buttonRepos-active.jpg);
                     }
             }
         }
@@ -468,7 +468,7 @@ a {
                 .reposLeft {
                     float:left;
                     top: 0px;
-                    background-image: url(/images/reposIcon1.png);
+                    background-image: url(../images/reposIcon1.png);
                     background-repeat: no-repeat;
                     background-position: 0px 2px;
                     width: 46px;
@@ -525,14 +525,14 @@ a {
                         }
                         .reposRightStarred {
                             position: absolute;
-                            background: url(/images/stars.jpg) no-repeat;
+                            background: url(../images/stars.jpg) no-repeat;
                             background-position: 0px;
                             right: 40px;
                             // width: 20px;
                         }
                         .reposRightBranches {
                             position: absolute;
-                            background: url(/images/forks.jpg) no-repeat;
+                            background: url(../images/forks.jpg) no-repeat;
                             background-position: 0px;
                             right: 0px;
                             // width: 20px;
@@ -603,13 +603,13 @@ a {
             // background-color: red;
             background-image: url();
             transition: all .5s ease;
-            background-image: url(/images/octocat.png);
+            background-image: url(../images/octocat.png);
             // opacity: 1;
             &:hover {
-                background-image: url(/images/octocat-hover.png);
+                background-image: url(../images/octocat-hover.png);
             }
             &:active {
-                background-image: url(/images/strongbadtocat-90px.png);
+                background-image: url(../images/strongbadtocat-90px.png);
             }
         }
         .footRight{
